@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:voidium_ore",
+    "testmod:deepslate_voidium_ore",
+    "testmod:netherrack_voidium_ore",
+    "testmod:endstone_voidium_ore"
+  ]
+}

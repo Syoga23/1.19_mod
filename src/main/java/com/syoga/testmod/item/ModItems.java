@@ -15,6 +15,9 @@ public class ModItems {
     public static final RegistryObject<Item> ROTTIUM = ITEMS.register("rottium",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> VOIDIUM = ITEMS.register("voidium",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

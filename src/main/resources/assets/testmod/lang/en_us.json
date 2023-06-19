@@ -1,5 +1,12 @@
 {
   "item.testmod.rottium": "Rottium",
+  "item.testmod.voidium": "Voidium",
 
-  "creativemodetab.testmod_tab": "TestMod Tab"
+  "block.testmod.rotten_block": "Rotten block",
+  "block.testmod.voidium_ore": "Voidium ore",
+  "block.testmod.deepslate_voidium_ore": "Deepslate voidium ore",
+  "block.testmod.netherrack_voidium_ore": "Netherrack voidium ore",
+  "block.testmod.endstone_voidium_ore": "Endstone voidium ore",
+
+  "creativemodetab.testmod_tab": "Syoga's Toys"
 }

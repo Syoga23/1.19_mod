@@ -1,7 +1,1 @@
-// 1.19.4	2023-06-20T15:01:17.9797435	Recipes
-8eddd7b9e1fd17eecc5d9ee448da2ee49cfbe6bb data/minecraft/advancements/recipes/building_blocks/rottium.json
-e593857e7447c1f4f7354093505f3e028f3fe32d data/minecraft/advancements/recipes/misc/rotten_block.json
-e06c3e7efa126d8b5e2ff56015ccab10cae983d5 data/minecraft/advancements/recipes/misc/rottium_from_smelting_voidium.json
-40d88a7144b4cb698943fd5a1d4944f425ee8866 data/minecraft/recipes/rotten_block.json
-48eee250c619b3eef3a20aed63fac3e6ff876ca3 data/minecraft/recipes/rottium.json
-1a3607914afb32c6fb8bea67a1e53cb6e445b9a5 data/minecraft/recipes/rottium_from_smelting_voidium.json
+// 1.19.4	2023-06-20T21:28:06.973069	Recipes

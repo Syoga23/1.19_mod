@@ -28,6 +28,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         add(ModBlocks.ENDSTONE_VOIDIUM_ORE.get(),
                 (block) -> createOreDrop(ModBlocks.ENDSTONE_VOIDIUM_ORE.get(), ModItems.VOIDIUM.get()));
 
+        this.dropSelf(ModBlocks.EBONY_LOG.get());
+        this.dropSelf(ModBlocks.EBONY_WOOD.get());
+        this.dropSelf(ModBlocks.EBONY_PLANKS.get());
+        this.dropSelf(ModBlocks.STRIPPED_EBONY_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_EBONY_LOG.get());
+        this.dropSelf(ModBlocks.EBONY_SAPLING.get());
+
+
+        this.add(ModBlocks.EBONY_LEAVES.get(), (block) ->
+                createLeavesDrops(block, ModBlocks.EBONY_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
     }
 
     @Override

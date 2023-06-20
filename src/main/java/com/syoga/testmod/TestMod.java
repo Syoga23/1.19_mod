@@ -53,6 +53,14 @@ public class TestMod {
             event.accept(ModBlocks.DEEPSLATE_VOIDIUM_ORE);
             event.accept(ModBlocks.NETHERRACK_VOIDIUM_ORE);
             event.accept(ModBlocks.ENDSTONE_VOIDIUM_ORE);
+
+            event.accept(ModBlocks.EBONY_LEAVES);
+            event.accept(ModBlocks.EBONY_LOG);
+            event.accept(ModBlocks.EBONY_WOOD);
+            event.accept(ModBlocks.EBONY_PLANKS);
+            event.accept(ModBlocks.STRIPPED_EBONY_LOG);
+            event.accept(ModBlocks.STRIPPED_EBONY_WOOD);
+            event.accept(ModBlocks.EBONY_SAPLING);
         }
 
         if (event.getTab() == ModCreativeModeTabs.TESTMOD_TAB) {
@@ -64,6 +72,14 @@ public class TestMod {
             event.accept(ModBlocks.DEEPSLATE_VOIDIUM_ORE);
             event.accept(ModBlocks.NETHERRACK_VOIDIUM_ORE);
             event.accept(ModBlocks.ENDSTONE_VOIDIUM_ORE);
+
+            event.accept(ModBlocks.EBONY_LEAVES);
+            event.accept(ModBlocks.EBONY_LOG);
+            event.accept(ModBlocks.EBONY_WOOD);
+            event.accept(ModBlocks.EBONY_PLANKS);
+            event.accept(ModBlocks.STRIPPED_EBONY_LOG);
+            event.accept(ModBlocks.STRIPPED_EBONY_WOOD);
+            event.accept(ModBlocks.EBONY_SAPLING);
 
         }
 

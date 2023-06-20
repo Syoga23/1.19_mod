@@ -4,7 +4,6 @@ import com.mojang.logging.LogUtils;
 import com.syoga.testmod.block.ModBlocks;
 import com.syoga.testmod.item.ModCreativeModeTabs;
 import com.syoga.testmod.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;

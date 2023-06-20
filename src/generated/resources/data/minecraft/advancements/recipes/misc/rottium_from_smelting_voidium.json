@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:rottium_from_smelting_voidium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_voidium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "testmod:voidium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_voidium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:rottium_from_smelting_voidium"
+    ]
+  }
+}

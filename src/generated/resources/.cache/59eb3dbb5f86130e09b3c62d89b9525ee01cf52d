@@ -1,6 +1,6 @@
-// 1.19.4	2023-06-20T22:06:39.411283	Loot Tables
+// 1.19.4	2023-06-20T23:27:01.4814321	Loot Tables
 98e4dc1ea37e169bf1e4172ca2b21146dbf70d34 data/testmod/loot_tables/blocks/deepslate_voidium_ore.json
-7d819366e11828d892fe56b42078f04a32be3c8d data/testmod/loot_tables/blocks/ebony_leaves.json
+956de6e68ddde7da310869ffc82d02d9a1aa6db2 data/testmod/loot_tables/blocks/ebony_leaves.json
 b9ec0575acdf1fe17173986032ede274da19a00f data/testmod/loot_tables/blocks/ebony_log.json
 5a5c80cc8672c2fd2e30daa7dfc8fd53126bd9a6 data/testmod/loot_tables/blocks/ebony_planks.json
 6b0fe07b4fa1c3c6ecd25f01fd6af31756047b85 data/testmod/loot_tables/blocks/ebony_sapling.json

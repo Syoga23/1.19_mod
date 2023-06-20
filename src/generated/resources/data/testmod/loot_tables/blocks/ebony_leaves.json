@@ -37,7 +37,7 @@
                   ]
                 }
               ],
-              "name": "testmod:ebony_sapling"
+              "name": "testmod:ebony_leaves"
             },
             {
               "type": "minecraft:item",
@@ -56,7 +56,7 @@
                   "enchantment": "minecraft:fortune"
                 }
               ],
-              "name": "testmod:ebony_leaves"
+              "name": "testmod:ebony_sapling"
             }
           ]
         }

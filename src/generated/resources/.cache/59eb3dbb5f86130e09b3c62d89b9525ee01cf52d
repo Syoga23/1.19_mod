@@ -1,13 +1,13 @@
-// 1.19.4	2023-06-20T23:27:01.4814321	Loot Tables
-98e4dc1ea37e169bf1e4172ca2b21146dbf70d34 data/testmod/loot_tables/blocks/deepslate_voidium_ore.json
+// 1.19.4	2023-06-21T18:24:52.9831856	Loot Tables
+5d1c95db47e2b7fd41a93270e85cbcada9b1bf64 data/testmod/loot_tables/blocks/deepslate_voidium_ore.json
 956de6e68ddde7da310869ffc82d02d9a1aa6db2 data/testmod/loot_tables/blocks/ebony_leaves.json
 b9ec0575acdf1fe17173986032ede274da19a00f data/testmod/loot_tables/blocks/ebony_log.json
 5a5c80cc8672c2fd2e30daa7dfc8fd53126bd9a6 data/testmod/loot_tables/blocks/ebony_planks.json
 6b0fe07b4fa1c3c6ecd25f01fd6af31756047b85 data/testmod/loot_tables/blocks/ebony_sapling.json
 d419b513ef23e04dafe3628d592909d52c4f426d data/testmod/loot_tables/blocks/ebony_wood.json
-37cbb96865ea81b5e80d5709899c5839ca75c2a0 data/testmod/loot_tables/blocks/endstone_voidium_ore.json
-552e8f442f159b4f4d0bb74057c5b087c59ea086 data/testmod/loot_tables/blocks/netherrack_voidium_ore.json
+790a7dc74dd0ebfa8cf1fce405698988489f0437 data/testmod/loot_tables/blocks/endstone_voidium_ore.json
+8d70cb797331a1ae4af57099453ada80632621b7 data/testmod/loot_tables/blocks/netherrack_voidium_ore.json
 0781bff4c4b0ac315bcd8ec07838968685142395 data/testmod/loot_tables/blocks/rotten_block.json
 23ce873c2cba6ff5268eaec2d31661f1b5a6c2be data/testmod/loot_tables/blocks/stripped_ebony_log.json
 0e1d1ff82aaa98be99bd8c2f19bf06689abd009c data/testmod/loot_tables/blocks/stripped_ebony_wood.json
-4207320b1312b824f6468caf3f3298a11e284729 data/testmod/loot_tables/blocks/voidium_ore.json
+56e5a0b51962eeaece914be56c9787d24df371ad data/testmod/loot_tables/blocks/voidium_ore.json

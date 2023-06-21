@@ -2,6 +2,7 @@ package com.syoga.testmod.block;
 
 import com.syoga.testmod.TestMod;
 import com.syoga.testmod.block.custom.ModFlammableRotatedPillarBlock;
+import com.syoga.testmod.item.FuelBlockItem;
 import com.syoga.testmod.item.ModItems;
 import com.syoga.testmod.worldgen.tree.EbonyTreeGrower;
 import net.minecraft.core.BlockPos;
@@ -9,6 +10,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -18,6 +21,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
@@ -101,12 +105,8 @@ public class ModBlocks {
 
             });
 
-
     public static final RegistryObject<Block> EBONY_SAPLING = registerBlock("ebony_sapling",
             () -> new SaplingBlock(new EbonyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-
-
-
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -114,9 +114,10 @@ public class ModBlocks {
         return toReturn;
     }
 
+
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
-                new Item.Properties()));
+        return ModItems.ITEMS.register(name, () -> new FuelBlockItem(block.get(),
+                new Item.Properties(), 200));
     }
 
     public static void register(IEventBus eventBus){

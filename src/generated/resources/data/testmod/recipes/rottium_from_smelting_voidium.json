@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "rottium",
+  "ingredient": {
+    "item": "testmod:voidium"
+  },
+  "result": "testmod:rottium"
+}

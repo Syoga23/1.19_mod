@@ -2,11 +2,18 @@
   "item.testmod.rottium": "Rottium",
   "item.testmod.voidium": "Voidium",
 
-  "block.testmod.rotten_block": "Rotten block",
-  "block.testmod.voidium_ore": "Voidium ore",
-  "block.testmod.deepslate_voidium_ore": "Deepslate voidium ore",
-  "block.testmod.netherrack_voidium_ore": "Netherrack voidium ore",
-  "block.testmod.endstone_voidium_ore": "Endstone voidium ore",
+  "block.testmod.rotten_block": "Block of Rottium",
+  "block.testmod.voidium_ore": "Voidium Ore",
+  "block.testmod.deepslate_voidium_ore": "Deepslate Voidium Ore",
+  "block.testmod.netherrack_voidium_ore": "Netherrack Voidium Ore",
+  "block.testmod.endstone_voidium_ore": "Endstone Voidium Ore",
+  "block.testmod.ebony_log": "Ebony Log",
+  "block.testmod.ebony_wood": "Ebony Wood",
+  "block.testmod.ebony_leaves": "Ebony Leaves",
+  "block.testmod.stripped_ebony_log": "Stripped Ebony Log",
+  "block.testmod.stripped_ebony_wood": "Stripped Ebony Wood",
+  "block.testmod.ebony_sapling": "Ebony Sapling",
+  "block.testmod.ebony_planks": "Ebony Planks",
 
   "creativemodetab.testmod_tab": "Syoga's Toys"
 }

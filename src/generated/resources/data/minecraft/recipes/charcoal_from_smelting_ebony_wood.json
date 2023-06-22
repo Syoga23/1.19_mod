@@ -3,9 +3,9 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.7,
-  "group": "rottium",
+  "group": "charcoal",
   "ingredient": {
-    "item": "testmod:voidium"
+    "item": "testmod:ebony_wood"
   },
-  "result": "testmod:rottium"
+  "result": "minecraft:charcoal"
 }

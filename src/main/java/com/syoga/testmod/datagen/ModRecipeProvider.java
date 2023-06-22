@@ -6,10 +6,13 @@ import com.syoga.testmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import javax.annotation.Nullable;
@@ -25,8 +28,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
-        oreSmelting(consumer, List.of(ModItems.VOIDIUM.get()), RecipeCategory.MISC,
-                ModItems.ROTTIUM.get(), 0.7f, 200, "rottium");
+        oreSmelting(consumer, List.of(ModBlocks.EBONY_LOG.get()), RecipeCategory.MISC,
+                Items.CHARCOAL, 0.7f, 200, "charcoal");
+        oreSmelting(consumer, List.of(ModBlocks.STRIPPED_EBONY_LOG.get()), RecipeCategory.MISC,
+                Items.CHARCOAL, 0.7f, 200, "charcoal");
+        oreSmelting(consumer, List.of(ModBlocks.EBONY_WOOD.get()), RecipeCategory.MISC,
+                Items.CHARCOAL, 0.7f, 200, "charcoal");
+        oreSmelting(consumer, List.of(ModBlocks.STRIPPED_EBONY_WOOD.get()), RecipeCategory.MISC,
+                Items.CHARCOAL, 0.7f, 200, "charcoal");
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.ROTTIUM.get(), RecipeCategory.MISC,
                 ModBlocks.ROTTEN_BLOCK.get());
 

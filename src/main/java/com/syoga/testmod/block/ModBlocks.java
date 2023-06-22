@@ -2,7 +2,6 @@ package com.syoga.testmod.block;
 
 import com.syoga.testmod.TestMod;
 import com.syoga.testmod.block.custom.ModFlammableRotatedPillarBlock;
-import com.syoga.testmod.item.FuelBlockItem;
 import com.syoga.testmod.item.ModItems;
 import com.syoga.testmod.worldgen.tree.EbonyTreeGrower;
 import net.minecraft.core.BlockPos;
@@ -10,8 +9,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -21,7 +18,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
@@ -51,23 +47,22 @@ public class ModBlocks {
                     .strength(9f).requiresCorrectToolForDrops(), UniformInt.of(5, 10)));
 
 
-    public static final RegistryObject<Block> EBONY_LOG = registerBlock("ebony_log",
+    public static final RegistryObject<Block> EBONY_LOG = registerFuelBlock("ebony_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
-                    .strength(5f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> EBONY_WOOD = registerBlock("ebony_wood",
+                    .strength(7f)), 1000);
+    public static final RegistryObject<Block> EBONY_WOOD = registerFuelBlock("ebony_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
-                    .strength(5f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> STRIPPED_EBONY_LOG = registerBlock("stripped_ebony_log",
+                    .strength(7f)), 1000);
+    public static final RegistryObject<Block> STRIPPED_EBONY_LOG = registerFuelBlock("stripped_ebony_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
-                    .strength(5f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> STRIPPED_EBONY_WOOD = registerBlock("stripped_ebony_wood",
+                    .strength(7f)), 900);
+    public static final RegistryObject<Block> STRIPPED_EBONY_WOOD = registerFuelBlock("stripped_ebony_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
-                    .strength(5f).requiresCorrectToolForDrops()));
+                    .strength(7f)), 900);
 
-
-    public static final RegistryObject<Block> EBONY_PLANKS = registerBlock("ebony_planks",
+    public static final RegistryObject<Block> EBONY_PLANKS = registerFuelBlock("ebony_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .strength(5f)){
+                    .strength(3f,3f)){
 
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -84,9 +79,9 @@ public class ModBlocks {
                     return 20;
                 }
 
-            });
+            }, 1000);
 
-    public static final RegistryObject<Block> EBONY_LEAVES = registerBlock("ebony_leaves",
+    public static final RegistryObject<Block> EBONY_LEAVES = registerFuelBlock("ebony_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -103,10 +98,25 @@ public class ModBlocks {
                     return 60;
                 }
 
-            });
+            }, 400);
 
-    public static final RegistryObject<Block> EBONY_SAPLING = registerBlock("ebony_sapling",
-            () -> new SaplingBlock(new EbonyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> EBONY_SAPLING = registerFuelBlock("ebony_sapling",
+            () -> new SaplingBlock(new EbonyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), 200);
+
+    //fuel type blocks--------------------------------------------------------------------------------
+
+    private static <T extends Block> RegistryObject<T> registerFuelBlock(String name, Supplier<T> block, int burnTime){
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerFuelBlockItem(name, toReturn, burnTime);
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<Item> registerFuelBlockItem(String name, RegistryObject<T> block, int burnTime){
+        return ModItems.ITEMS.register(name, () -> new FuelBlockItem(block.get(),
+                new Item.Properties(), burnTime));
+    }
+
+    //simple non fuel blocks--------------------------------------------------------------------------
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -114,10 +124,9 @@ public class ModBlocks {
         return toReturn;
     }
 
-
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){
-        return ModItems.ITEMS.register(name, () -> new FuelBlockItem(block.get(),
-                new Item.Properties(), 200));
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
+                new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus){

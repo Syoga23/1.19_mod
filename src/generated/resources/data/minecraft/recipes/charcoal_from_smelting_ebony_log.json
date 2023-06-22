@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "charcoal",
+  "ingredient": {
+    "item": "testmod:ebony_log"
+  },
+  "result": "minecraft:charcoal"
+}

@@ -1,3 +1,9 @@
-// 1.19.4	2023-06-20T21:28:06.973069	Registries
-4d421eced5fb24fd7df414b0516b6e421e636148 data/testmod/worldgen/configured_feature/ebony.json
+// 1.19.4	2023-06-22T17:09:38.5323329	Registries
+54318c43c2fe4945e698483eb52c05b52d76f4f8 data/testmod/worldgen/configured_feature/ebony.json
+3884ebbdeb997da8918db3b29c4bda47d05bb18b data/testmod/worldgen/configured_feature/end_voidium_ore.json
+3080222399cd901735d66190e598d95a67315201 data/testmod/worldgen/configured_feature/nether_voidium_ore.json
+c60c74e8d0ec1cd5e5ffd91a616f2da0ed1bc3f2 data/testmod/worldgen/configured_feature/voidium_ore.json
 092219ffb5f1b4ab63f1ebbdff8d6ea8d20395aa data/testmod/worldgen/placed_feature/ebony_placed.json
+881378e92bcb15381ab224deae7f095030b8f4d1 data/testmod/worldgen/placed_feature/end_voidium_placed.json
+311ff93713358e245c2f8710f674c4db3e6e37f4 data/testmod/worldgen/placed_feature/nether_voidium_placed.json
+6bce8d9a5dcb2522d692be1e3a6438068c0322f3 data/testmod/worldgen/placed_feature/voidium_placed.json

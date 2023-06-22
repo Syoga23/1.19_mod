@@ -1,4 +1,4 @@
-package com.syoga.testmod.item;
+package com.syoga.testmod.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
